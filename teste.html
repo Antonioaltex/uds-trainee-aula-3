@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trainee</title>
+  </head>
+  <body>
+    <img src="imagem/Koala.jpg" id="imagem">
+    <button type="button" name="button" id="teste">Sumiu</button>
+
+    <script>
+    document.getElementById("teste").addEventListener("click", function (){
+      if (document.getElementById("imagem").style.display == "none"){
+        document.getElementById("imagem").style.display = "block";
+        return;
+      }
+      document.getElementById("imagem").style.display = "none";
+    });
+    </script>
+
+  </body>
+</html>

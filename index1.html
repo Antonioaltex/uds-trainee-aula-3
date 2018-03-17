@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <h1>A soma de + e -</h1>
+
+
+  <div id="dai"></div>
+  <button type="button" name="button" id="adicionar">adicionar</button>
+  <button type="button" name="button" id="remover">remover</button>
+    <button type="button" name="button" id="teste">Para</button>
+
+    <script>
+
+      var soma = 0;
+
+        document.getElementById("adicionar").addEventListener("click", function () {
+          window.setInterval(() => {
+          soma++;
+          document.getElementById("dai").innerHTML = parseInt(soma);
+        },1000)
+        });
+
+        document.getElementById("remover").addEventListener("click", function() {
+            window.setInterval(() => {
+          soma--;
+          document.getElementById("dai").innerHTML = parseInt(soma);
+        },1000)
+        });
+
+
+        document.getElementById("teste").addEventListener("click", function (){
+          if (document.getElementById("dai").style.display == "none"){
+            document.getElementById("dai").style.display = "block";
+            return;
+          }
+
+          document.getElementById("dai").style.display = "none";
+        });
+
+
+
+        var texto = "+adicionar+ para somar mais 1 e -remover- para subtrai menos 1. ";
+        console.log(texto);
+        alert ("Click em: " + texto)
+
+
+    </script>
+
+
+  </body>
+</html>
